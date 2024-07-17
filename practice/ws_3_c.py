@@ -60,10 +60,10 @@ def sum_of_digits(number):
         1 + 2 + 3
         결과 : 6
     '''
-    if number < 10:
-        return 0
-    else:
-        return(sum_of_digits(number % 10))
+    if number < 10 :
+        return number
+    else :
+        return((number % 10)+(sum_of_digits(number // 10)))
 result_3 = sum_of_digits(321)
 print(result_3) # 1 + 2 + 3 = 6
 
