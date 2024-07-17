@@ -7,7 +7,9 @@ print(result)  # 8
 
 
 # lambda 표현식으로 작성한 addition 함수
-
+addition = lambda x, y: x + y
+result = addition(3,5)
+print(result)
 
 # with map 함수
 numbers = [1, 2, 3, 4, 5]
