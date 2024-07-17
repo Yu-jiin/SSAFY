@@ -37,9 +37,10 @@ def power(base, exponent):
             2 * (2 * (2 * 1))  
             결과 : 8
     '''
-    if :
-        return 
+    if exponent == 0 :
+        return(1)
     else:
+        return(power(base,exponent-1)*base)
         
         return
 result_2 = power(2, 3)
@@ -59,10 +60,10 @@ def sum_of_digits(number):
         1 + 2 + 3
         결과 : 6
     '''
-    if :
-        return 
+    if number < 10:
+        return 0
     else:
-        return 
+        return(sum_of_digits(number % 10))
 result_3 = sum_of_digits(321)
 print(result_3) # 1 + 2 + 3 = 6
 
