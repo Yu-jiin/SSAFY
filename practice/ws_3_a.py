@@ -20,10 +20,11 @@ print(result_2)
 # is_negative(3) 결과 : False
 # 함수를 수정하고 호출 결과를 result_2 변수에 할당하여 출력하시오.
 
-
-def default_arg_func(default):
-    default = '기본값'
+##### 얘 왜 안돼 ㅠㅠ 
+def default_arg_func(default='기본값'):
     return default
 
 result_3 = default_arg_func()
 result_4 = default_arg_func('다른 값')
+print(result_3)
+print(result_4)
