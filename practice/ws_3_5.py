@@ -36,7 +36,7 @@ def rental_book(info):
     
 
 # -----------------------------------
-
+ # 
 list(map(rental_book, many_user))
 list(map(rental_book, map(lambda x: {'name' : x['name'], 'age':x['age'], 'address':x['address']}, many_user)))
 
