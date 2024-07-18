@@ -34,4 +34,4 @@ missing_book = [rental
      if rental not in list_of_book
      ]
 
-    
+   
