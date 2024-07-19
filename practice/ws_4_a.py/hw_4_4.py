@@ -34,4 +34,11 @@ missing_book = [rental
      if rental not in list_of_book
      ]
 
+print(missing_book)
+
+if not missing_book:
+    print("모든 도서가 대여 가능한 상태입니다.")
+else :
+    for book in missing_book:
+        print(f'{book} 을/를 보충하여야 합니다.')
    

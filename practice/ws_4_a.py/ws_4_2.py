@@ -2,13 +2,18 @@
 import requests
 from pprint import pprint as print
 
-a = 0
-while a < 11:
-    API_URL = 'https://jsonplaceholder.typicode.com/users/'+a
-    response = requests.get(API_URL)
+dummy_data = []
+
+API_URL = 'https://jsonplaceholder.typicode.com/users/{}'
+
+for i in range(1,11):
+    response = requests.get(API_URL.format(i))
     parsed_data = response.json()
-    print(parsed_data[a]['name'])
-    a += 1
+    dummy_data.append(parsed_data['name'])
+    
+print(dummy_data)
+
+   
 
 # # 정보 경로 요청
 # API_URL = 'https://jsonplaceholder.typicode.com/users/'+a
@@ -22,9 +27,3 @@ while a < 11:
 # print('----------------------------------')
 # print(f'parsed_data : {parsed_data}')
 # print('-----------------------------------')
-
-
-# a = 0
-# while a < 11:
-#     print(parsed_data[a]['name'])
-#     a += 1
