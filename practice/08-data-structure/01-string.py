@@ -8,11 +8,22 @@ print(text.index('a')) # 1
 # print(text.index('z')) #
  
 # isupper
+string1 = 'HELLO'
+string2 = 'Hello'
+print(string1.isupper()) # T
+print(string2.isupper()) # T
 
 
 # islower
+print(string1.islower()) # F
+print(string2.islower()) # F
 
 # isalpha
+string1 = 'Hello'
+string2 = '123heksjfi85'
+
+print(string1.isalpha()) # T
+print(string2.isalpha()) # F
 
 # replace
 text = 'Hello, world!'
