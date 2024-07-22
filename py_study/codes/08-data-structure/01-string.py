@@ -1,71 +1,73 @@
 # find
 text = 'banana'
-print(text.find('a')) # 1
-print(text.find('z')) # -1
+print(text.find('a'))
+print(text.find('z'))
 
 # index
-print(text.index('a')) # 1
-# print(text.index('z')) #
- 
+print(text.index('a'))
+# print(text.index('z'))
+
 # isupper
 string1 = 'HELLO'
 string2 = 'Hello'
-print(string1.isupper()) # T
-print(string2.isupper()) # F 
-
+print(string1.isupper())  # T
+print(string2.isupper())  # F
 
 # islower
-print(string1.islower()) # F
-print(string2.islower()) # F
+print(string1.islower())  # F
+print(string2.islower())  # F
 
 # isalpha
 string1 = 'Hello'
-string2 = '123heksjfi85'
+string2 = '123heis98576ssh'
+print(string1.isalpha())  # T
+print(string2.isalpha())  # F
 
-print(string1.isalpha()) # T
-print(string2.isalpha()) # F
 
 # replace
-text = 'Hello, world!'
-print(text.replace('world','Python')) # Hello, world
-print(text.replace('world','Python',3)) 
-print(text.replace('world', 'Jiin'))
+text = 'Hello, world! world world'
+new_text = text.replace('world', 'Python', 1)
+print(new_text)  # Hello, Python!
 
-# strip 공백이나 특정 문자열 제거 
+# strip
 text = '  Hello, world!  '
 new_text = text.strip()
 print(new_text)
 
 # split
 text = 'Hello, world!'
-print(text.split(','))
-print(text.split()) # 공백도 가능 
+words = text.split(',')
+words2 = text.split()
+print(words)  # ['Hello', ' world!'] 
+print(words2)  # ['Hello,', 'world!'] 
+
 
 # join
 words = ['Hello', 'world!']
-new_text1 = '-'.join(words)
-print(new_text1)
+new_text = '-'.join(words)
+print(new_text)  # Hello-world!
 
 # capitalize
 text = 'heLLo, woRld!'
-print(text.capitalize()) # 맨 앞 대문자, 뒤는 싹 소문자 
-
+new_text1 = text.capitalize()
+print(new_text1)  # Hello, world!
 
 # title
 new_text2 = text.title()
-print(new_text2) # Hello, World! 
+print(new_text2)  # Hello, World!
 
 # upper
-new_Text3 = text.upper()
-print(new_Text3)
+new_text3 = text.upper()
+print(new_text3)  # HELLO, WORLD!
 
 # lower
 new_text4 = text.lower()
-print(new_text4)
+print(new_text4)  # hello, world!
 
 # swapcase
 new_text5 = text.swapcase()
-print(new_text5) # 대 소문자 서로 바꿈 
+print(new_text5)  # HEllO, WOrLD!
+
 
 # 참고
 # isdecimal() : 가장 엄격한 기준을 적용, 오직 일반적인 십진수 숫자(0-9)만 True로 인식
