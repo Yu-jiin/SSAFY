@@ -2,7 +2,7 @@
 def reverse_string(a):
     return ''.join(reversed(a))
     
-    
+#  join = iterable 문자열을 연결한 문자열을 반환 
 
 
 result = reverse_string("Hello, World!")

@@ -13,5 +13,5 @@ def remove_duplicates(lst):
 result = remove_duplicates([1, 2, 2, 3, 4, 4, 5])
 print(result)
 
-
+# 중복 제거를 빈 리스트에 값이 없다면 추가하는 형식으로 바꿔 생각 
  
