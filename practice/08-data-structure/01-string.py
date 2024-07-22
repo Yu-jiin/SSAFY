@@ -27,24 +27,45 @@ print(string2.isalpha()) # F
 
 # replace
 text = 'Hello, world!'
+print(text.replace('world','Python')) # Hello, world
+print(text.replace('world','Python',3)) 
+
 
 # strip
 text = '  Hello, world!  '
+new_text = text.strip()
+print(new_text)
 
 # split
 text = 'Hello, world!'
+print(text.split(','))
+print(text.split()) # 공백도 가능 
 
 # join
 words = ['Hello', 'world!']
+new_text1 = '-'.join(words)
+print(new_text1)
 
 # capitalize
 text = 'heLLo, woRld!'
+print(text.capitalize()) # 맨 앞 대문자, 뒤는 싹 소문자 
+
 
 # title
-# upper
-# lower
-# swapcase
+new_text2 = text.title()
+print(new_text2) # Hello, World! 
 
+# upper
+new_Text3 = text.upper()
+print(new_Text3)
+
+# lower
+new_text4 = text.lower()
+print(new_text4)
+
+# swapcase
+new_text5 = text.swapcase()
+print(new_text5) # 대 소문자 서로 바꿈 
 
 # # 참고
 # # isdecimal() : 가장 엄격한 기준을 적용, 오직 일반적인 십진수 숫자(0-9)만 True로 인식
