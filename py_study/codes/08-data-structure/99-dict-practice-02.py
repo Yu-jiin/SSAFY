@@ -4,23 +4,24 @@ a = [1,2,6]
 a.append(7)
 print(a)
 
-# 1. [] 표기법을 사용한 방법
+# # 1. [] 표기법을 사용한 방법
+# def dict_invert(input_dict):
+#     new = {}
+#     for k,v in input_dict.items():
+#         if v not in new:       
+#             new[v] = [k] 
+#         else:
+#             # new[v].append(k)  둘 다 같은 값 반환 
+#             new[v] = new[v] + [k]
+#     return new
+
+
+# 2. get 메서드를 사용한 방법
 def dict_invert(input_dict):
     new = {}
-    keys = []
     for k,v in input_dict.items():
-        new[v] = keys
-        if v in new:
-            keys.append(k)
-        else:
-            keys
+        new[v] = new.get(k,[k])
     return new
-
-
-# # 2. get 메서드를 사용한 방법
-# def dict_invert(input_dict):
-#     pass
-
 
 # # 3. setdefault 메서드를 사용한 방법
 # def dict_invert(input_dict):
