@@ -60,5 +60,5 @@ b = {'name' : 'Alice', 'age' : 25}
 a.update(b)
 print(a)
 b['name'] = 'Harry'
-print(a)
-print(b)
+print(a) # a는 별도의 주소를 가지고 있기에 바뀌지 않음
+print(b) 

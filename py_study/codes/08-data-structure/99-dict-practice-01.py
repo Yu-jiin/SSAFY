@@ -2,10 +2,16 @@
 blood_types = ['A', 'B', 'O', 'AB', 'A', 'O', 'B', 'A', 'AB', 'O', 'A', 'B']
 
 
+
 # 1. [] 표기법을 사용한 방법
 def count_blood_types(blood_types):
-    pass
-
+    blood = {}
+    for b in blood_types:
+        if b in blood:
+            blood[blood] += 1
+        else :
+            blood[blood] = 1 
+    return blood
 
 print(count_blood_types(blood_types))  # {'A': 4, 'B': 3, 'O': 3, 'AB': 2}
 
