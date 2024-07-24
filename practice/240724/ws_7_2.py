@@ -1,6 +1,12 @@
 # 아래 클래스를 수정하시오.
 class Shape:
-    pass
+    
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+    
+    def calculate_area(self):
+        return self.x*self.y
 
 
 shape1 = Shape(5, 3)
