@@ -27,7 +27,7 @@ data = [
 key_list = ['name', 'company', 'is_collapsible']
 
 # 아래에 코드를 작성하시오.
-
+# key_list 를 돌려서 할당 할당 
 for d in data:
     if d.get('company') not in d.keys():
         d.setdefault('company', 'unknown')
