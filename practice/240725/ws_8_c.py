@@ -25,38 +25,19 @@ class Other(BaseModel):
         print('데이터를 다른 장소에 저장했습니다.')
  
 class ExtendedModel(Novel,Other):
-    def __init__(self, data_type, title, content, created_at, updated_at, author):
-        super().__init__(data_type, title, content, created_at, updated_at, author)
-    
-    def display_info():
+    def __init__(self):
+        self.extended_type = 'Extended Type'
+
+    def display_info(self):
         
-          print(f'PK : {BaseModel.PK}, TYPE : {BaseModel.TYPE}, Extended Type : ')
+          print(f'PK : {BaseModel.PK}, TYPE : {BaseModel.TYPE}, Extended Type : {self.extended_type}')
     
     def save(self):
         print('데이터를 학장해서 저장합니다.')
     
-extended_instance = ExtendedModel(1, 'Other Model', 'extended_type')
-print(extended_instance.display_info)
-print(extended_instance.save)
+print('ExtendedModel 인스턴스의 정보 출력 및 저장 메서드 호출')
+extended_instance = ExtendedModel()
+extended_instance.display_info()
+extended_instance.save()
         
-hong = Novel('소설', '홍길동', '고전 소설', 1618, 1692, '허균')
-chun = Novel('소설', '춘향전', '고전 소설', 'unknown', 'unknown', '작자미상')
-print('Novel 모델 인스턴스의 PK와 save 메서드')
-print(hong.PK)
-print(chun.PK)
-hong.save()
-chun.save()
-print(hong.author)
-print(chun.author)
-print('---')
-
-company = Other('회사', '회사명', '회사 설명', 2000, 2023)
-print('Other 모델 인스턴스의 PK와 save 메서드')
-print(company.PK)
-company.save()
-
-print('---')
-print('모델 별 타입')
-print(Novel.TYPE)
-print(Other.TYPE)
 
