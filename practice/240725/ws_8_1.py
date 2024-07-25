@@ -1,18 +1,31 @@
 # 아래 클래스를 수정하시오.
 class Animal:
-    pass
+    num_of_animals = 0
+    def __init__(self):
+        pass
+        
 
 
-class Dog:
-    pass
+class Dog(Animal):
+    def __init__(self):
+        super().__init__()
+        Animal.num_of_animals += 1
 
 
-class Cat:
-    pass
+class Cat(Animal):
+    def __init__(self):
+        super().__init__()
+        Animal.num_of_animals += 1
 
 
-class Pet:
-    pass
+class Pet(Dog,Cat):
+    
+    def __init__(self):
+        super().__init__()
+    
+    @classmethod
+    def access_num_of_animal(cls):
+        return f'동물의 수는 {cls.num_of_animals}마리 입니다.'
 
 
 dog = Dog()
