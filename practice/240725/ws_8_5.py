@@ -3,31 +3,24 @@
 class Dog:
     def __init__(self):
         pass
-    def bark(self):
-        print('멍멍 !')
+    sound = '멍멍'
         
 class Cat:
     def __init__(self):
         pass
-    def meow(self):
-        print('야옹 !')
+    sound = '야옹'
      
-class Pet(Dog,Cat):
+class Pet(Cat,Dog):
 
-    def __init__(self,m):
+    def __init__(self):
         super().__init__()
-        self.m = m
+
+    def __str__(self):
+        return f'애완동물은 {self.sound} 소리를 냅니다.'
     
-    def play(self):
-        print('애완동물과 놀기')
-        
-    def make_sound(self):
-        print(self.m)
 
-sound = Pet('')
+pet1 = Pet()
+print(pet1)
 
-pet1 = Pet("그르르")
-pet1.make_sound()
-pet1.bark()
-pet1.meow()
-pet1.play()
+
+

@@ -1,6 +1,5 @@
 # 아래 클래스를 수정하시오.
 class Animal:
-    num_of_animals = 0
     def __init__(self):
         pass
 
