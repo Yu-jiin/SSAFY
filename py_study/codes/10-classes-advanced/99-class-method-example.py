@@ -8,7 +8,7 @@ class Animal:
         self.name = name
         Animal.total_count += 1
 
-    @classmethod
+    @classmethod # cls = 클래스 메서드를 호출하는 클래스
     def get_total_count(cls):
         return f'전체 동물 수: {cls.total_count}'
 

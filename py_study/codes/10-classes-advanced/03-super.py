@@ -25,8 +25,12 @@ class Person:
         self.number = number
         self.email = email
 
+# 부모 생성자를 호출하고 본인의 생성자를 추가 
 class Student(Person):
-    pass
+    def __init__(self, name, age, number, email, student_id, gpa):
+        super().__init__(name, age, number, email) # 부모꺼 꼭 쓰기 
+        self.student_id = student_id
+        self.gpa = gpa
 
 
 
@@ -48,4 +52,13 @@ class ParentB:
 
 
 class Child(ParentA, ParentB):
-    pass
+    def __init__(self):
+        super().__init__()
+        # ParentB.__init__() 필요하다면 ParentB 쓰지만 사용하지 않기 
+        self.value_c = 'Child'
+
+child1 = Child()
+print(child1.value_a)
+print(child1.value_c)
+# print(child1.value_b) # 'Child' object has no attribute 'value_b'
+# a에서 만났기에 b에는 접근 조차 안함 
