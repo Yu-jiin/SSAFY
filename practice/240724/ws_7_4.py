@@ -14,10 +14,5 @@ class Shape:
         print(f'Perimeter : {perimeter}')
         
 
-    
-
-    
-
-
 shape1 = Shape(5, 3)
 shape1.print_info()
