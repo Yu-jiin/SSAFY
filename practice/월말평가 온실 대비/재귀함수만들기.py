@@ -55,3 +55,6 @@ def sum_of_digits(num):
 
 result_3 = sum_of_digits(321)
 print(result_3) # 1 + 2 + 3 = 6
+
+
+    
