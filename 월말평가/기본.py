@@ -65,7 +65,7 @@ print(my_dict2)
 set0 = set()
 set2 = {3,6,9}
 set1 = {1,2,3}
-print(set1 | set2) # 합집합 1 2 3 6 9
+print(set1 | set2) # 합집합 1 2 3 6 9 합집합 || 
 print(set1 - set2) # 차집합 1 2  
 print(set1 & set2) # 교집합 3
 

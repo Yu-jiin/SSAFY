@@ -19,7 +19,5 @@ def sort_tuple(tuple):
     a.sort()
     return a
 
-
-
 result = sort_tuple((5, 2, 8, 1, 3))
 print(result)
