@@ -21,7 +21,7 @@ def find_min(i):
     min_value = numbers[0]
     for num in numbers:
         if num < min_value:
-            min_value = num
+            min_value = num 
     return min_value
 result = find_min(numbers)
 print(result)
