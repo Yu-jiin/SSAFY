@@ -79,3 +79,5 @@ print(list3) # [-56, -4, 0, 2, 8, 9, 45]
 
 list3.sort(reverse = True) # 뒤집은걸 또 내림차순
 print(list3) # [45, 9, 8, 2, 0, -4, -56]
+
+

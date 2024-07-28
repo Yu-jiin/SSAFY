@@ -4,6 +4,12 @@
 def min_score(scores):
     pass
     # 여기에 코드를 작성하여 함수를 완성합니다.
+    for score in scores:
+        print(min_value)
+        if score < min_value:
+            min_value = score
+    return min_value
+    
 
 
 # 추가 테스트를 위한 코드 작성 가능
