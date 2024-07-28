@@ -4,8 +4,8 @@
 def min_score(scores):
     pass
     # 여기에 코드를 작성하여 함수를 완성합니다.
+    min_value = scores[0]
     for score in scores:
-        print(min_value)
         if score < min_value:
             min_value = score
     return min_value
@@ -20,6 +20,6 @@ def min_score(scores):
 # 모든 책임은 삭제한 본인에게 있습니다. 
 ############## 테스트 코드 삭제 금지 #################
 print(min_score([30, 60, 90, 70])) # 30
-print(min_score([0, 10, 20, 30, 40, 50])) # 0
+print(min_score([10, 0, 20, 30, 40, 50])) # 0
 print(min_score([50, 70, 50, 45, 80, 80])) # 45
 #####################################################

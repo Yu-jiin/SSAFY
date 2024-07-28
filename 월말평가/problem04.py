@@ -3,7 +3,24 @@
 def is_id_valid(user_data):
     pass
     # 여기에 코드를 작성하여 함수를 완성합니다.
+    id = user_data['id']
+    id = id[::-1]
+    valid_id = id[0]
+    print(valid_id)
+    check = list(range(0,10))
+    print(check)
+    try:
+        int(valid_id)
+    except:
+        return False
+    if int(valid_id) in check:
+        return True
+    else:
+        return False
 
+    #  우선 문자열을 정수로 변환, 변환이 안되면 예외처리
+    #  그런 다음 확인 
+    # 정수로 변환안하면 문자열이라 비교 불가  
 
 # 추가 테스트를 위한 코드 작성 가능
 # 예) print(함수명(인자))
