@@ -10,7 +10,14 @@ def factorial(n):
         result = n * factorial(n-1)   
     return result   
 print(factorial(5))
-         
+
+
+def fac(n):
+    if n == 0:
+        return 1
+    else:
+        return n * fac(n-1)
+print(fac(5))
 
 # 피보나치 수열  n = (n-2) + (n-1) 가 핵심!! 
 # 피보나치 수열의 index n의 값을 리턴
