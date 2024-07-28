@@ -53,4 +53,29 @@ print(list2) # ['추가', 6, 8, 54, 1, 'jiin', 'is', '24', 'tired', '아오']
 # .insert(i,x) 리스트의 지정한 인덱스 i위치에 x 삽입 
 
 list2.remove('아오')
-print(list2)
+print(list2) # ['추가', 6, 8, 54, 1, 'jiin', 'is', '24', 'tired']
+# remove(x) 리스트에서 첫번째로 일치하는 항목 삭제
+
+# 시퀀스 데이터 구조 pop 부터 하자
+# .pop() 리스트에서 지정한 인덱스의 항목을 제거하고 반환 
+#        작성하지 않을 경우 마지막 항목 제거
+item1 = list2.pop() # 마지막 제거 
+item2 = list2.pop(0) # 1번째 제거 
+print(item1) # tired 제거 
+print(item2) # 추가 제거 
+print(list2) # [6, 8, 54, 1, 'jiin', 'is', '24']
+
+a = list2.index(8)
+print(a) # 8은 1번째 인덱스에 위치
+
+print(list2.count(1)) # 1은 1개 있음 !! 
+
+list2.reverse() # 역순으로 변경 but 정렬 No
+print(list2) # ['24', 'is', 'jiin', 1, 54, 8, 6]
+
+list3 = [-4,45,8,2,0,9,-56]
+list3.sort() # 오름차순
+print(list3) # [-56, -4, 0, 2, 8, 9, 45]
+
+list3.sort(reverse = True) # 뒤집은걸 또 내림차순
+print(list3) # [45, 9, 8, 2, 0, -4, -56]
