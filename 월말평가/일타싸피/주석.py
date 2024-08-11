@@ -30,7 +30,6 @@ def calcul_distances_and_angles(objball, holes):
 def best_hole(distance_to_holes, angle_to_holes):
     # 가장 짧은 거리를 가진 홀의 인덱스를 찾습니다.
     best_hole_idx = distance_to_holes.index(min(distance_to_holes))
-    
     # 가장 가까운 홀의 인덱스와 해당 홀까지의 각도를 반환합니다.
     return best_hole_idx, angle_to_holes[best_hole_idx]
 
